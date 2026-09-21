@@ -11,8 +11,8 @@ public class RaktarApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(RaktarApplication.class.getResource("raktar-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Hello!");
+        Scene scene = new Scene(fxmlLoader.load(), 395, 355);
+        stage.setTitle("Raktár");
         stage.setScene(scene);
         stage.show();
     }
