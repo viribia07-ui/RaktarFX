@@ -2,18 +2,19 @@
 
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="335.0" prefWidth="395.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="335.0" prefWidth="412.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <HBox alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="55.0" prefWidth="365.0" spacing="10.0">
+      <HBox alignment="CENTER" layoutX="20.0" layoutY="14.0" prefHeight="55.0" prefWidth="365.0" spacing="10.0">
          <children>
-            <Button mnemonicParsing="false" text="Raktár 1">
+            <Button id="buttonRaktar1" fx:id="buttonRaktar1" mnemonicParsing="false" onAction="#onButtonRaktar1" text="Raktár 1">
                <HBox.margin>
                   <Insets right="25.0" />
                </HBox.margin></Button>
-            <TextField />
-            <Button mnemonicParsing="false" text="Raktár 2">
+            <TextField id="textFieldRaktar" fx:id="textFieldRaktar" />
+            <Button id="buttonRaktar2" fx:id="buttonRaktar2" mnemonicParsing="false" onAction="#onButtonRaktar2" text="Raktár 2">
                <HBox.margin>
                   <Insets left="25.0" />
                </HBox.margin></Button>
@@ -22,12 +23,48 @@
             <Insets bottom="10.0" left="10.0" right="10.0" />
          </padding>
       </HBox>
-      <ListView layoutX="14.0" layoutY="69.0" prefHeight="200.0" prefWidth="149.0" />
-      <ListView layoutX="230.0" layoutY="69.0" prefHeight="200.0" prefWidth="149.0" />
-      <Button layoutX="180.0" layoutY="69.0" mnemonicParsing="false" text="&gt;&gt;" />
-      <Button layoutX="180.0" layoutY="100.0" mnemonicParsing="false" text="&lt;&lt;" />
-      <Button layoutX="170.0" layoutY="231.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="5.0" text="X" />
-      <Button layoutX="197.0" layoutY="231.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="5.0" text="X" />
-      <Button layoutX="171.0" layoutY="286.0" mnemonicParsing="false" text="Mentés" />
+      <ListView id="leftListView" fx:id="leftListView" layoutX="14.0" layoutY="69.0" prefHeight="200.0" prefWidth="149.0" />
+      <ListView id="rightListView" fx:id="rightListView" layoutX="246.0" layoutY="69.0" prefHeight="200.0" prefWidth="149.0" />
+      <Button id="buttonToRight" fx:id="buttonToRight" layoutX="187.0" layoutY="69.0" mnemonicParsing="false">
+         <graphic>
+            <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../right.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button id="buttonToLeft" fx:id="buttonToLeft" layoutX="187.0" layoutY="100.0" mnemonicParsing="false">
+         <graphic>
+            <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../left.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button layoutX="171.0" layoutY="243.0" mnemonicParsing="false" prefHeight="13.0" prefWidth="5.0">
+         <graphic>
+            <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../del.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button layoutX="169.0" layoutY="296.0" mnemonicParsing="false" text="Mentés">
+         <graphic>
+            <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../save.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button layoutX="211.0" layoutY="243.0" mnemonicParsing="false" prefHeight="5.0" prefWidth="7.0">
+         <graphic>
+            <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../del.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
    </children>
 </AnchorPane>
