@@ -1,1 +1,2 @@
 # RaktarFX
+Egy gyakorló feladat
