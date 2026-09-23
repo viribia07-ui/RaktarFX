@@ -14,7 +14,7 @@
          <children>
             <HBox alignment="CENTER" layoutX="13.0" prefHeight="42.0" prefWidth="443.0">
                <children>
-                  <Button contentDisplay="RIGHT" mnemonicParsing="false" text="Raktár1">
+                  <Button id="buttonRaktar1" fx:id="buttonRaktar1" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#onButtonRaktar1" text="Raktár1">
                      <HBox.margin>
                         <Insets right="10.0" />
                      </HBox.margin>
@@ -25,11 +25,11 @@
                            </image>
                         </ImageView>
                      </graphic></Button>
-                  <TextField prefHeight="25.0" prefWidth="218.0">
+                  <TextField id="textFieldInput" fx:id="textFieldInput" prefHeight="25.0" prefWidth="218.0">
                      <HBox.margin>
                         <Insets left="10.0" right="10.0" />
                      </HBox.margin></TextField>
-                  <Button mnemonicParsing="false" text="Raktár2">
+                  <Button id="buttonRaktar2" fx:id="buttonRaktar2" mnemonicParsing="false" onAction="#onButtonRaktar2" text="Raktár2">
                      <HBox.margin>
                         <Insets left="10.0" />
                      </HBox.margin>
@@ -43,7 +43,7 @@
                </children>
             </HBox>
             <VBox layoutX="28.0" layoutY="86.0" />
-            <Button layoutX="219.0" layoutY="86.0" mnemonicParsing="false">
+            <Button id="buttonToRaktar1" fx:id="buttonToRaktar1" layoutX="219.0" layoutY="86.0" mnemonicParsing="false" onAction="#onButtonToRaktar1">
                <graphic>
                   <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -51,7 +51,7 @@
                      </image>
                   </ImageView>
                </graphic></Button>
-            <Button layoutX="219.0" layoutY="50.0" mnemonicParsing="false">
+            <Button id="buttonToRaktar2" fx:id="buttonToRaktar2" layoutX="219.0" layoutY="50.0" mnemonicParsing="false" onAction="#onButtonToRaktar2">
                <graphic>
                   <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -59,9 +59,9 @@
                      </image>
                   </ImageView>
                </graphic></Button>
-            <ListView layoutX="28.0" layoutY="45.0" prefHeight="200.0" prefWidth="170.0" />
-            <ListView layoutX="273.0" layoutY="45.0" prefHeight="200.0" prefWidth="170.0" />
-            <Button alignment="CENTER" layoutX="198.0" layoutY="220.0" mnemonicParsing="false">
+            <ListView id="listViewRaktar1" fx:id="listViewRaktar1" layoutX="28.0" layoutY="45.0" prefHeight="200.0" prefWidth="170.0" />
+            <ListView id="listViewRaktar2" fx:id="listViewRaktar2" layoutX="273.0" layoutY="45.0" prefHeight="200.0" prefWidth="170.0" />
+            <Button id="buttonDeleteRaktar1" fx:id="buttonDeleteRaktar1" alignment="CENTER" layoutX="198.0" layoutY="220.0" mnemonicParsing="false" onAction="#onButtonDelete1">
                <graphic>
                   <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -70,7 +70,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button alignment="CENTER" layoutX="241.0" layoutY="220.0" mnemonicParsing="false">
+            <Button id="buttonDeleteRaktar2" fx:id="buttonDeleteRaktar2" alignment="CENTER" layoutX="241.0" layoutY="220.0" mnemonicParsing="false" onAction="#onButtonDelete2">
                <graphic>
                   <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -81,7 +81,7 @@
             </Button>
          </children>
       </AnchorPane>
-      <Button mnemonicParsing="false" text="Mentés">
+      <Button id="buttonSave" fx:id="buttonSave" mnemonicParsing="false" onAction="#onButtonSave" text="Mentés">
          <graphic>
             <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
                <image>
